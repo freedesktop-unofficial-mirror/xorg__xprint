@@ -566,7 +566,7 @@ AC_ARG_ENABLE(xvfb,    	      AS_HELP_STRING([--enable-xvfb], [Build Xvfb server
 AC_ARG_ENABLE(xnest,   	      AS_HELP_STRING([--enable-xnest], [Build Xnest server (default: auto)]), [XNEST=$enableval], [XNEST=auto])
 AC_ARG_ENABLE(xquartz,        AS_HELP_STRING([--enable-xquartz], [Build Xquartz server for OS-X (default: auto)]), [XQUARTZ=$enableval], [XQUARTZ=auto])
 AC_ARG_ENABLE(xwin,    	      AS_HELP_STRING([--enable-xwin], [Build XWin server (default: auto)]), [XWIN=$enableval], [XWIN=auto])
-AC_ARG_ENABLE(xprint,         AS_HELP_STRING([--enable-xprint], [Build Xprint extension and server (default: no)]), [XPRINT=$enableval], [XPRINT=no])
+AC_ARG_ENABLE(xprint,         AS_HELP_STRING([--enable-xprint], [Build Xprint extension and server (default: no)]), [XPRINT=$enableval], [XPRINT=yes])
 AC_ARG_ENABLE(xgl,            AS_HELP_STRING([--enable-xgl], [Build Xgl server (default: no)]), [XGL=$enableval], [XGL=no])
 AC_ARG_ENABLE(xglx,           AS_HELP_STRING([--enable-xglx], [Build Xglx xgl module (default: no)]), [XGLX=$enableval], [XGLX=no])
 AC_ARG_ENABLE(xegl,           AS_HELP_STRING([--enable-xegl], [Build Xegl xgl module (default: no)]), [XEGL=$enableval], [XEGL=no])
@@ -2097,97 +2097,6 @@ Xi/Makefile
 xfixes/Makefile
 exa/Makefile
 hw/Makefile
-hw/xfree86/Makefile
-hw/xfree86/common/Makefile
-hw/xfree86/common/xf86Build.h
-hw/xfree86/ddc/Makefile
-hw/xfree86/dixmods/Makefile
-hw/xfree86/dixmods/extmod/Makefile
-hw/xfree86/doc/Makefile
-hw/xfree86/doc/devel/Makefile
-hw/xfree86/doc/man/Makefile
-hw/xfree86/doc/sgml/Makefile
-hw/xfree86/dri/Makefile
-hw/xfree86/dri2/Makefile
-hw/xfree86/dummylib/Makefile
-hw/xfree86/exa/Makefile
-hw/xfree86/fbdevhw/Makefile
-hw/xfree86/i2c/Makefile
-hw/xfree86/int10/Makefile
-hw/xfree86/loader/Makefile
-hw/xfree86/modes/Makefile
-hw/xfree86/os-support/Makefile
-hw/xfree86/os-support/bsd/Makefile
-hw/xfree86/os-support/bus/Makefile
-hw/xfree86/os-support/hurd/Makefile
-hw/xfree86/os-support/misc/Makefile
-hw/xfree86/os-support/linux/Makefile
-hw/xfree86/os-support/lynxos/Makefile
-hw/xfree86/os-support/sco/Makefile
-hw/xfree86/os-support/solaris/Makefile
-hw/xfree86/os-support/sysv/Makefile
-hw/xfree86/os-support/usl/Makefile
-hw/xfree86/parser/Makefile
-hw/xfree86/rac/Makefile
-hw/xfree86/ramdac/Makefile
-hw/xfree86/shadowfb/Makefile
-hw/xfree86/vbe/Makefile
-hw/xfree86/vgahw/Makefile
-hw/xfree86/x86emu/Makefile
-hw/xfree86/xaa/Makefile
-hw/xfree86/xf1bpp/Makefile
-hw/xfree86/xf4bpp/Makefile
-hw/xfree86/xf8_16bpp/Makefile
-hw/xfree86/utils/Makefile
-hw/xfree86/utils/cvt/Makefile
-hw/xfree86/utils/gtf/Makefile
-hw/xfree86/utils/ioport/Makefile
-hw/xfree86/utils/kbd_mode/Makefile
-hw/xfree86/utils/xorgcfg/Makefile
-hw/xfree86/utils/xorgconfig/Makefile
-hw/dmx/config/Makefile
-hw/dmx/doc/Makefile
-hw/dmx/examples/Makefile
-hw/dmx/input/Makefile
-hw/dmx/glxProxy/Makefile
-hw/dmx/Makefile
-hw/vfb/Makefile
-hw/xgl/Makefile
-hw/xgl/egl/Makefile
-hw/xgl/egl/module/Makefile
-hw/xgl/glx/Makefile
-hw/xgl/glx/module/Makefile
-hw/xgl/glxext/Makefile
-hw/xgl/glxext/module/Makefile
-hw/xnest/Makefile
-hw/xwin/Makefile
-hw/xquartz/Makefile
-hw/xquartz/GL/Makefile
-hw/xquartz/bundle/Makefile
-hw/xquartz/doc/Makefile
-hw/xquartz/mach-startup/Makefile
-hw/xquartz/xpr/Makefile
-hw/kdrive/Makefile
-hw/kdrive/ati/Makefile
-hw/kdrive/chips/Makefile
-hw/kdrive/ephyr/Makefile
-hw/kdrive/epson/Makefile
-hw/kdrive/fake/Makefile
-hw/kdrive/fbdev/Makefile
-hw/kdrive/i810/Makefile
-hw/kdrive/linux/Makefile
-hw/kdrive/mach64/Makefile
-hw/kdrive/mga/Makefile
-hw/kdrive/neomagic/Makefile
-hw/kdrive/nvidia/Makefile
-hw/kdrive/pm2/Makefile
-hw/kdrive/r128/Makefile
-hw/kdrive/sdl/Makefile
-hw/kdrive/sis300/Makefile
-hw/kdrive/smi/Makefile
-hw/kdrive/src/Makefile
-hw/kdrive/vesa/Makefile
-hw/kdrive/via/Makefile
 hw/xprint/Makefile
 hw/xprint/doc/Makefile
 hw/xprint/pcl/Makefile
