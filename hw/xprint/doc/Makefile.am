@@ -19,4 +19,5 @@ SUFFIXES += .$(APP_MAN_SUFFIX) .man
 	$(LN_S) $< $@
 
 EXTRA_DIST = $(MAN_SRCS) Xprt.html Xprt.sgml Xprt.ps \
-	Xprt.book Xprt.mif XprtIX.doc XprtTOC.doc Xprt_cov.mif
+	Xprt.book Xprt.mif XprtIX.doc XprtTOC.doc Xprt_cov.mif \
+	Xprint_FAQ.html
