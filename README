@@ -1,0 +1,15 @@
+Xprint is now deprecated.
+
+For a WYSIWYG-style printing API giving equivalence between what appears in an 
+X windows and what gets printed on paper or to pdf or postscript, you may want 
+to consider using libcairo, the Cairo graphics library 
+(http://cairographics.org/)
+
+Font support for Xprint was removed from libXfont 1.4. To build Xprt under
+libXfont 1.4 (or later) you will need to use built-in fonts 
+    ./configure --enable-builtin-fonts
+(By default built-in fonts are not used, equivalent to --disable-builtin-fonts).
+
+However built-in fonts may cause a segfault in client programs, which has not 
+been debugged since Xprint is deprecated. For an operational Xprt you may want 
+to built against libXfont 1.3.
